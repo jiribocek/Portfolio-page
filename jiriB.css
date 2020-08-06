@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #ffffff;
+    background: black;
+    line-height: 1.6;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*.upper {
+    background-color: aquamarine;
+} */
+
+.cont {
+    width: 100%;
+    height: 100%;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(222, 232, 235);
+    border-bottom: black solid;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+}
+
+.logo {
+    color: rgb(8, 8, 8);
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+
+.menu {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    width: 35%;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.links li {
+    list-style: none;
+    padding: 10px 25px;
+    align-items: center;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.links a:hover {
+    border-bottom: solid black;
+    transition: 0.1s;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+
+}
+
+section h1 {
+    font-size: 35px;
+}
+
+section p {
+    font-size: 1.3rem;
+}
+
+section#domů {
+    background: url(macbook-pro-beside-smartphone-on-white-table-3787323.jpg) no-repeat center center/cover;
+}
+
+.middle {
+    margin-top: 230px;
+    margin-left: 340px;
+    width: 100%;
+
+}
+
+section#domů h1 {
+    font-size: 60px;
+    color: black;
+}
+section#domů h2 {
+    color: black;
+    font-size: 33px;
+    letter-spacing: 3px;
+}
+
+section#domů h3 {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+#interest {
+     background-color: rgb(222, 230, 235);
+     position: relative;
+}
+
+#hledani {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vim {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 50px;
+
+}
+
+.position {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    margin: auto;
+
+}
+
+.box {
+    width: 330px;
+    height: 230px;
+    background-size: cover;
+    float: left;
+    box-shadow: 2px 2px 12px;
+    margin: 60px 40px;
+    position: relative;
+    background-color: rgb(109, 146, 168);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.box{
+    position: relative;
+    box-sizing: border-box;
+}
+
+.box .icon {
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(201, 200, 195);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.box:hover .icon {
+    top: 20px;
+    left: calc (50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.box .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: rgb(121, 113, 113)
+
+}
+
+.box:hover .icon .fa{
+    font-size: 40px;
+
+}
+
+.position .box .praxe{
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 120px;
+    height: 100%
+}
+
+#omně {
+    background-color: rgb(180, 59, 59);
+}
+
+.descrip {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#omně h2 {
+    font-size: 45px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.popis {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 200px;
+    padding-top: 70px;
+
+}
+
+#kontakt {
+    background-color: darkgrey;
+}
+
+#kontakt h2 {
+    color: black;
+    font-size: 50px;
+}
+
+.kontakt-box {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.tel, .mail {
+    margin: 120px ;
+
+
+}
+
+.tel:hover h3 {
+    color: black;
+    font-size: 45px;
+    transition: 0.5s;
+}
+
+.mail:hover h3 {
+    color: black;
+    font-size: 45px;
+    transition: 0.5s;
+}
+
+#zkušenosti {
+    background-color: rgb(115, 183, 206);
+
+}
+
+
+.zkusenost h2 {
+    margin-top: 25px;
+    font-size: 45px;
+    justify-content: center;
+}
+
+.moje-zkusenosti {
+    height: 70%;
+    border: 3px solid white;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.item {
+    border: 2px solid white;
+    padding: 90px 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+  
+/* 1024 px
+    768
+    425 */
+
+@media(max-width: 768px) {
+    .all {
+        flex-direction: column;
+    
+    }
+    #domů {
+        justify-content: center;
+    }
+
+    .upper {
+        width: 768px;
+        font-size: 15px;
+    }
+
+    .links {
+        font-size: 10px;
+        justify-content: space-between;
+        padding-left: 0;
+    }
+
+    .omnenadpis h2{
+        padding-top: 200px;
+    }
+    .popis {
+        padding-bottom: 120px;
+    }
+
+}
